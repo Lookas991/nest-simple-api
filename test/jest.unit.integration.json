@@ -1,0 +1,20 @@
+{
+  "displayName": "unit-integration",
+  "rootDir": "../",
+  "testMatch": [
+    "<rootDir>/src/**/*.*.unit.spec.ts",
+    "<rootDir>/src/**/*.*.integration.spec.ts"
+  ],
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "transform": {
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        "tsconfig": "tsconfig.json"
+      }
+    ]
+  },
+  "testEnvironment": "node",
+  "globalSetup": "<rootDir>/test/global.setup.ts",
+  "globalTeardown": "<rootDir>/test/global.teardown.ts"
+}
